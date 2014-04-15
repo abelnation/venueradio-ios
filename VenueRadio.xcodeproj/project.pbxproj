@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C475018F9E849E19AC774E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 331B82AABD0D4142A78295D1 /* libPods.a */; };
+		2ABE0A2D776045BBA15E5843 /* libPods-VenueRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B222BEB86244E799D80F2D /* libPods-VenueRadioTests.a */; };
+		E614425918F1C140000605E3 /* SGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E614425218F1C140000605E3 /* SGEvent.m */; };
+		E614425A18F1C140000605E3 /* SGPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E614425418F1C140000605E3 /* SGPerformer.m */; };
+		E614425B18F1C140000605E3 /* SGProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E614425618F1C140000605E3 /* SGProvider.m */; };
+		E614425C18F1C140000605E3 /* SGVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = E614425818F1C140000605E3 /* SGVenue.m */; };
+		E614425F18F1C946000605E3 /* VRUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E614425E18F1C946000605E3 /* VRUserInfo.m */; };
+		E614426118F1D3B9000605E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E614426018F1D3B9000605E3 /* CoreLocation.framework */; };
+		E658D73218F6641A00CA5AE3 /* VRVenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E658D73118F6641A00CA5AE3 /* VRVenueDetailViewController.m */; };
+		E658D73418F6648C00CA5AE3 /* VRVenueDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E658D73318F6648C00CA5AE3 /* VRVenueDetailHeaderView.xib */; };
+		E658D73718F6755C00CA5AE3 /* VRVenueDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E658D73618F6755C00CA5AE3 /* VRVenueDetailTableViewCell.m */; };
+		E6649C4E18FB6BAB00A62743 /* SGVenueById.json in Resources */ = {isa = PBXBuildFile; fileRef = E6649C4D18FB6BAB00A62743 /* SGVenueById.json */; };
+		E66F251618FB361D00351E69 /* SGVenuesByCity.json in Resources */ = {isa = PBXBuildFile; fileRef = E66F251518FB361D00351E69 /* SGVenuesByCity.json */; };
+		E66F251818FB364700351E69 /* SGVenueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F251718FB364700351E69 /* SGVenueSpec.m */; };
+		E67A83EE18EA776500941836 /* VRQueryStringURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E67A83ED18EA776500941836 /* VRQueryStringURL.m */; };
+		E67A83F018EA77C600941836 /* VRQueryStringURLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E67A83EF18EA77C600941836 /* VRQueryStringURLSpec.m */; };
+		E67A83F318EB640500941836 /* VRVenueListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E67A83F218EB640500941836 /* VRVenueListTableViewCell.m */; };
+		E6F5ACB818EA69870091276A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACB718EA69870091276A /* Foundation.framework */; };
+		E6F5ACBA18EA69870091276A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACB918EA69870091276A /* CoreGraphics.framework */; };
+		E6F5ACBC18EA69870091276A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACBB18EA69870091276A /* UIKit.framework */; };
+		E6F5ACC218EA69870091276A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F5ACC018EA69870091276A /* InfoPlist.strings */; };
+		E6F5ACC418EA69870091276A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F5ACC318EA69870091276A /* main.m */; };
+		E6F5ACC818EA69870091276A /* VRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F5ACC718EA69870091276A /* VRAppDelegate.m */; };
+		E6F5ACCA18EA69870091276A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F5ACC918EA69870091276A /* Images.xcassets */; };
+		E6F5ACD118EA69870091276A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACD018EA69870091276A /* XCTest.framework */; };
+		E6F5ACD218EA69870091276A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACB718EA69870091276A /* Foundation.framework */; };
+		E6F5ACD318EA69870091276A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5ACBB18EA69870091276A /* UIKit.framework */; };
+		E6F5ACDB18EA69870091276A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F5ACD918EA69870091276A /* InfoPlist.strings */; };
+		E6F5ACEB18EA6B5E0091276A /* VRVenueListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F5ACEA18EA6B5E0091276A /* VRVenueListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6F5ACD418EA69870091276A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6F5ACAC18EA69870091276A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6F5ACB318EA69870091276A;
+			remoteInfo = VenueRadio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		331B82AABD0D4142A78295D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7247EEC779A34BDD8DB82553 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A4B222BEB86244E799D80F2D /* libPods-VenueRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VenueRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614425118F1C140000605E3 /* SGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGEvent.h; sourceTree = "<group>"; };
+		E614425218F1C140000605E3 /* SGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGEvent.m; sourceTree = "<group>"; };
+		E614425318F1C140000605E3 /* SGPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPerformer.h; sourceTree = "<group>"; };
+		E614425418F1C140000605E3 /* SGPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPerformer.m; sourceTree = "<group>"; };
+		E614425518F1C140000605E3 /* SGProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGProvider.h; sourceTree = "<group>"; };
+		E614425618F1C140000605E3 /* SGProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGProvider.m; sourceTree = "<group>"; };
+		E614425718F1C140000605E3 /* SGVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGVenue.h; sourceTree = "<group>"; };
+		E614425818F1C140000605E3 /* SGVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGVenue.m; sourceTree = "<group>"; };
+		E614425D18F1C946000605E3 /* VRUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRUserInfo.h; sourceTree = "<group>"; };
+		E614425E18F1C946000605E3 /* VRUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRUserInfo.m; sourceTree = "<group>"; };
+		E614426018F1D3B9000605E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E614426218F1D3D2000605E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E658D73018F6641A00CA5AE3 /* VRVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRVenueDetailViewController.h; sourceTree = "<group>"; };
+		E658D73118F6641A00CA5AE3 /* VRVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRVenueDetailViewController.m; sourceTree = "<group>"; };
+		E658D73318F6648C00CA5AE3 /* VRVenueDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRVenueDetailHeaderView.xib; sourceTree = "<group>"; };
+		E658D73518F6755C00CA5AE3 /* VRVenueDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRVenueDetailTableViewCell.h; sourceTree = "<group>"; };
+		E658D73618F6755C00CA5AE3 /* VRVenueDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRVenueDetailTableViewCell.m; sourceTree = "<group>"; };
+		E6649C4D18FB6BAB00A62743 /* SGVenueById.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SGVenueById.json; sourceTree = "<group>"; };
+		E66F251518FB361D00351E69 /* SGVenuesByCity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SGVenuesByCity.json; sourceTree = "<group>"; };
+		E66F251718FB364700351E69 /* SGVenueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGVenueSpec.m; sourceTree = "<group>"; };
+		E67A83EC18EA776500941836 /* VRQueryStringURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRQueryStringURL.h; sourceTree = "<group>"; };
+		E67A83ED18EA776500941836 /* VRQueryStringURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRQueryStringURL.m; sourceTree = "<group>"; };
+		E67A83EF18EA77C600941836 /* VRQueryStringURLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRQueryStringURLSpec.m; sourceTree = "<group>"; };
+		E67A83F118EB640500941836 /* VRVenueListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRVenueListTableViewCell.h; sourceTree = "<group>"; };
+		E67A83F218EB640500941836 /* VRVenueListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRVenueListTableViewCell.m; sourceTree = "<group>"; };
+		E6F5ACB418EA69870091276A /* VenueRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F5ACB718EA69870091276A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E6F5ACB918EA69870091276A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E6F5ACBB18EA69870091276A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6F5ACBF18EA69870091276A /* VenueRadio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenueRadio-Info.plist"; sourceTree = "<group>"; };
+		E6F5ACC118EA69870091276A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6F5ACC318EA69870091276A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6F5ACC518EA69870091276A /* VenueRadio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenueRadio-Prefix.pch"; sourceTree = "<group>"; };
+		E6F5ACC618EA69870091276A /* VRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRAppDelegate.h; sourceTree = "<group>"; };
+		E6F5ACC718EA69870091276A /* VRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRAppDelegate.m; sourceTree = "<group>"; };
+		E6F5ACC918EA69870091276A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E6F5ACCF18EA69870091276A /* VenueRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenueRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F5ACD018EA69870091276A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E6F5ACD818EA69870091276A /* VenueRadioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenueRadioTests-Info.plist"; sourceTree = "<group>"; };
+		E6F5ACDA18EA69870091276A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6F5ACE918EA6B5E0091276A /* VRVenueListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRVenueListViewController.h; sourceTree = "<group>"; };
+		E6F5ACEA18EA6B5E0091276A /* VRVenueListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRVenueListViewController.m; sourceTree = "<group>"; };
+		E6F5ACEE18EA6BF80091276A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F95446D61325494892906832 /* Pods-VenueRadioTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenueRadioTests.xcconfig"; path = "Pods/Pods-VenueRadioTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6F5ACB118EA69870091276A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E614426118F1D3B9000605E3 /* CoreLocation.framework in Frameworks */,
+				E6F5ACBA18EA69870091276A /* CoreGraphics.framework in Frameworks */,
+				E6F5ACBC18EA69870091276A /* UIKit.framework in Frameworks */,
+				E6F5ACB818EA69870091276A /* Foundation.framework in Frameworks */,
+				0C475018F9E849E19AC774E0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F5ACCC18EA69870091276A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F5ACD118EA69870091276A /* XCTest.framework in Frameworks */,
+				E6F5ACD318EA69870091276A /* UIKit.framework in Frameworks */,
+				E6F5ACD218EA69870091276A /* Foundation.framework in Frameworks */,
+				2ABE0A2D776045BBA15E5843 /* libPods-VenueRadioTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E658D72818F65FF800CA5AE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E614425718F1C140000605E3 /* SGVenue.h */,
+				E614425818F1C140000605E3 /* SGVenue.m */,
+				E614425118F1C140000605E3 /* SGEvent.h */,
+				E614425218F1C140000605E3 /* SGEvent.m */,
+				E614425318F1C140000605E3 /* SGPerformer.h */,
+				E614425418F1C140000605E3 /* SGPerformer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E658D72918F65FFF00CA5AE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E67A83F118EB640500941836 /* VRVenueListTableViewCell.h */,
+				E67A83F218EB640500941836 /* VRVenueListTableViewCell.m */,
+				E658D73318F6648C00CA5AE3 /* VRVenueDetailHeaderView.xib */,
+				E658D73518F6755C00CA5AE3 /* VRVenueDetailTableViewCell.h */,
+				E658D73618F6755C00CA5AE3 /* VRVenueDetailTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E658D72A18F6600300CA5AE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6F5ACE918EA6B5E0091276A /* VRVenueListViewController.h */,
+				E6F5ACEA18EA6B5E0091276A /* VRVenueListViewController.m */,
+				E658D73018F6641A00CA5AE3 /* VRVenueDetailViewController.h */,
+				E658D73118F6641A00CA5AE3 /* VRVenueDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E658D72B18F6600800CA5AE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E614425518F1C140000605E3 /* SGProvider.h */,
+				E614425618F1C140000605E3 /* SGProvider.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E658D72C18F6604B00CA5AE3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E67A83EC18EA776500941836 /* VRQueryStringURL.h */,
+				E67A83ED18EA776500941836 /* VRQueryStringURL.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		E66F251018FB356200351E69 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E66F251518FB361D00351E69 /* SGVenuesByCity.json */,
+				E6649C4D18FB6BAB00A62743 /* SGVenueById.json */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		E6F5ACAB18EA69870091276A = {
+			isa = PBXGroup;
+			children = (
+				E6F5ACEE18EA6BF80091276A /* Podfile */,
+				E6F5ACBD18EA69870091276A /* VenueRadio */,
+				E6F5ACD618EA69870091276A /* VenueRadioTests */,
+				E6F5ACB618EA69870091276A /* Frameworks */,
+				E6F5ACB518EA69870091276A /* Products */,
+				F95446D61325494892906832 /* Pods-VenueRadioTests.xcconfig */,
+				7247EEC779A34BDD8DB82553 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E6F5ACB518EA69870091276A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6F5ACB418EA69870091276A /* VenueRadio.app */,
+				E6F5ACCF18EA69870091276A /* VenueRadioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6F5ACB618EA69870091276A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E614426218F1D3D2000605E3 /* CFNetwork.framework */,
+				E614426018F1D3B9000605E3 /* CoreLocation.framework */,
+				E6F5ACB718EA69870091276A /* Foundation.framework */,
+				E6F5ACB918EA69870091276A /* CoreGraphics.framework */,
+				E6F5ACBB18EA69870091276A /* UIKit.framework */,
+				E6F5ACD018EA69870091276A /* XCTest.framework */,
+				A4B222BEB86244E799D80F2D /* libPods-VenueRadioTests.a */,
+				331B82AABD0D4142A78295D1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6F5ACBD18EA69870091276A /* VenueRadio */ = {
+			isa = PBXGroup;
+			children = (
+				E658D72C18F6604B00CA5AE3 /* Util */,
+				E658D72B18F6600800CA5AE3 /* Services */,
+				E658D72A18F6600300CA5AE3 /* Controllers */,
+				E658D72918F65FFF00CA5AE3 /* Views */,
+				E658D72818F65FF800CA5AE3 /* Models */,
+				E6F5ACC618EA69870091276A /* VRAppDelegate.h */,
+				E6F5ACC718EA69870091276A /* VRAppDelegate.m */,
+				E6F5ACC918EA69870091276A /* Images.xcassets */,
+				E6F5ACBE18EA69870091276A /* Supporting Files */,
+				E614425D18F1C946000605E3 /* VRUserInfo.h */,
+				E614425E18F1C946000605E3 /* VRUserInfo.m */,
+			);
+			path = VenueRadio;
+			sourceTree = "<group>";
+		};
+		E6F5ACBE18EA69870091276A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6F5ACBF18EA69870091276A /* VenueRadio-Info.plist */,
+				E6F5ACC018EA69870091276A /* InfoPlist.strings */,
+				E6F5ACC318EA69870091276A /* main.m */,
+				E6F5ACC518EA69870091276A /* VenueRadio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6F5ACD618EA69870091276A /* VenueRadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				E66F251018FB356200351E69 /* Fixtures */,
+				E6F5ACD718EA69870091276A /* Supporting Files */,
+				E67A83EF18EA77C600941836 /* VRQueryStringURLSpec.m */,
+				E66F251718FB364700351E69 /* SGVenueSpec.m */,
+			);
+			path = VenueRadioTests;
+			sourceTree = "<group>";
+		};
+		E6F5ACD718EA69870091276A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6F5ACD818EA69870091276A /* VenueRadioTests-Info.plist */,
+				E6F5ACD918EA69870091276A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6F5ACB318EA69870091276A /* VenueRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F5ACE018EA69880091276A /* Build configuration list for PBXNativeTarget "VenueRadio" */;
+			buildPhases = (
+				B63AF3092921498683C24136 /* Check Pods Manifest.lock */,
+				E6F5ACB018EA69870091276A /* Sources */,
+				E6F5ACB118EA69870091276A /* Frameworks */,
+				E6F5ACB218EA69870091276A /* Resources */,
+				2B13E1E52E394034A1158213 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VenueRadio;
+			productName = VenueRadio;
+			productReference = E6F5ACB418EA69870091276A /* VenueRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6F5ACCE18EA69870091276A /* VenueRadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F5ACE318EA69880091276A /* Build configuration list for PBXNativeTarget "VenueRadioTests" */;
+			buildPhases = (
+				01775227D08249E19A7F7919 /* Check Pods Manifest.lock */,
+				E6F5ACCB18EA69870091276A /* Sources */,
+				E6F5ACCC18EA69870091276A /* Frameworks */,
+				E6F5ACCD18EA69870091276A /* Resources */,
+				92DBC43C987B479092544275 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6F5ACD518EA69870091276A /* PBXTargetDependency */,
+			);
+			name = VenueRadioTests;
+			productName = VenueRadioTests;
+			productReference = E6F5ACCF18EA69870091276A /* VenueRadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6F5ACAC18EA69870091276A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GrooveMechanic;
+				TargetAttributes = {
+					E6F5ACCE18EA69870091276A = {
+						TestTargetID = E6F5ACB318EA69870091276A;
+					};
+				};
+			};
+			buildConfigurationList = E6F5ACAF18EA69870091276A /* Build configuration list for PBXProject "VenueRadio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6F5ACAB18EA69870091276A;
+			productRefGroup = E6F5ACB518EA69870091276A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6F5ACB318EA69870091276A /* VenueRadio */,
+				E6F5ACCE18EA69870091276A /* VenueRadioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6F5ACB218EA69870091276A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F5ACC218EA69870091276A /* InfoPlist.strings in Resources */,
+				E658D73418F6648C00CA5AE3 /* VRVenueDetailHeaderView.xib in Resources */,
+				E6F5ACCA18EA69870091276A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F5ACCD18EA69870091276A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F5ACDB18EA69870091276A /* InfoPlist.strings in Resources */,
+				E66F251618FB361D00351E69 /* SGVenuesByCity.json in Resources */,
+				E6649C4E18FB6BAB00A62743 /* SGVenueById.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01775227D08249E19A7F7919 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B13E1E52E394034A1158213 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92DBC43C987B479092544275 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-VenueRadioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63AF3092921498683C24136 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6F5ACB018EA69870091276A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E614425B18F1C140000605E3 /* SGProvider.m in Sources */,
+				E614425918F1C140000605E3 /* SGEvent.m in Sources */,
+				E6F5ACC818EA69870091276A /* VRAppDelegate.m in Sources */,
+				E6F5ACEB18EA6B5E0091276A /* VRVenueListViewController.m in Sources */,
+				E67A83F318EB640500941836 /* VRVenueListTableViewCell.m in Sources */,
+				E658D73218F6641A00CA5AE3 /* VRVenueDetailViewController.m in Sources */,
+				E6F5ACC418EA69870091276A /* main.m in Sources */,
+				E67A83EE18EA776500941836 /* VRQueryStringURL.m in Sources */,
+				E658D73718F6755C00CA5AE3 /* VRVenueDetailTableViewCell.m in Sources */,
+				E614425C18F1C140000605E3 /* SGVenue.m in Sources */,
+				E614425A18F1C140000605E3 /* SGPerformer.m in Sources */,
+				E614425F18F1C946000605E3 /* VRUserInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F5ACCB18EA69870091276A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67A83F018EA77C600941836 /* VRQueryStringURLSpec.m in Sources */,
+				E66F251818FB364700351E69 /* SGVenueSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6F5ACD518EA69870091276A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6F5ACB318EA69870091276A /* VenueRadio */;
+			targetProxy = E6F5ACD418EA69870091276A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6F5ACC018EA69870091276A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F5ACC118EA69870091276A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E6F5ACD918EA69870091276A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F5ACDA18EA69870091276A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6F5ACDE18EA69880091276A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6F5ACDF18EA69880091276A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6F5ACE118EA69880091276A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7247EEC779A34BDD8DB82553 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenueRadio/VenueRadio-Prefix.pch";
+				INFOPLIST_FILE = "VenueRadio/VenueRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6F5ACE218EA69880091276A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7247EEC779A34BDD8DB82553 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenueRadio/VenueRadio-Prefix.pch";
+				INFOPLIST_FILE = "VenueRadio/VenueRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E6F5ACE418EA69880091276A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95446D61325494892906832 /* Pods-VenueRadioTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VenueRadio.app/VenueRadio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenueRadio/VenueRadio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Kiwi\"",
+					"\"${PODS_ROOT}/Headers/Objection\"",
+					"\"${PODS_ROOT}/Headers/RestKit\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/CoreData\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Network\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/ObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Support\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Testing\"",
+					"\"${PODS_ROOT}/Headers/SOCKit\"",
+					"\"${PODS_ROOT}/Headers/TransitionKit\"",
+					"\"$(inherited)\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "VenueRadioTests/VenueRadioTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E6F5ACE518EA69880091276A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95446D61325494892906832 /* Pods-VenueRadioTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VenueRadio.app/VenueRadio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenueRadio/VenueRadio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Kiwi\"",
+					"\"${PODS_ROOT}/Headers/Objection\"",
+					"\"${PODS_ROOT}/Headers/RestKit\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/CoreData\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Network\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/ObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Support\"",
+					"\"${PODS_ROOT}/Headers/RestKit/RestKit/Testing\"",
+					"\"${PODS_ROOT}/Headers/SOCKit\"",
+					"\"${PODS_ROOT}/Headers/TransitionKit\"",
+					"\"$(inherited)\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "VenueRadioTests/VenueRadioTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6F5ACAF18EA69870091276A /* Build configuration list for PBXProject "VenueRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F5ACDE18EA69880091276A /* Debug */,
+				E6F5ACDF18EA69880091276A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F5ACE018EA69880091276A /* Build configuration list for PBXNativeTarget "VenueRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F5ACE118EA69880091276A /* Debug */,
+				E6F5ACE218EA69880091276A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F5ACE318EA69880091276A /* Build configuration list for PBXNativeTarget "VenueRadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F5ACE418EA69880091276A /* Debug */,
+				E6F5ACE518EA69880091276A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6F5ACAC18EA69870091276A /* Project object */;
+}

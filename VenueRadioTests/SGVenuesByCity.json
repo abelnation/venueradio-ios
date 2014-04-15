@@ -1,0 +1,231 @@
+{
+    "meta":{
+        "per_page":10,
+        "total":388,
+        "geolocation":null,
+        "took":37,
+        "page":1
+    },
+    "venues":[
+              {
+              "city":"San Francisco",
+              "name":"Candlestick Park",
+              "extended_address":"San Francisco, CA 94124",
+              "url":"http://seatgeek.com/venues/candlestick-park/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"candlestick-park",
+              "state":"CA",
+              "score":0.96169,
+              "postal_code":"94124",
+              "location":{
+              "lat":37.711,
+              "lon":-122.386
+              },
+              "address":"490 Jamestown Ave",
+              "timezone":"America/Los_Angeles",
+              "id":1132
+              },
+              {
+              "city":"San Francisco",
+              "name":"AT&T Park",
+              "extended_address":"San Francisco, CA 94107",
+              "url":"http://seatgeek.com/venues/at-t-park/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"at-t-park",
+              "state":"CA",
+              "score":0.91113,
+              "postal_code":"94107",
+              "location":{
+              "lat":37.7784,
+              "lon":-122.391
+              },
+              "address":"24 Willie Mays Plaza",
+              "timezone":"America/Los_Angeles",
+              "id":22
+              },
+              {
+              "city":"San Francisco",
+              "name":"Golden Gate Park",
+              "extended_address":"San Francisco, CA 94118",
+              "url":"http://seatgeek.com/venues/golden-gate-park/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"golden-gate-park",
+              "state":"CA",
+              "score":0.78374,
+              "postal_code":"94118",
+              "location":{
+              "lat":37.7694,
+              "lon":-122.486
+              },
+              "address":"501 Stanyan St.",
+              "timezone":"America/Los_Angeles",
+              "id":75
+              },
+              {
+              "city":"San Francisco",
+              "name":"The Olympic Club",
+              "extended_address":"San Francisco, CA 94132",
+              "url":"http://seatgeek.com/venues/the-olympic-club/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"the-olympic-club",
+              "state":"CA",
+              "score":0.7669,
+              "postal_code":"94132",
+              "location":{
+              "lat":37.7087,
+              "lon":-122.495
+              },
+              "address":"599 Skyline Boulevard",
+              "timezone":"America/Los_Angeles",
+              "id":5856
+              },
+              {
+              "city":"San Francisco",
+              "name":"America's Cup Pavilion",
+              "extended_address":"San Francisco, CA 94105",
+              "url":"http://seatgeek.com/venues/america-s-cup-pavilion/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"america-s-cup-pavilion",
+              "state":"CA",
+              "score":0.7648,
+              "postal_code":"94105",
+              "location":{
+              "lat":37.8054,
+              "lon":-122.403
+              },
+              "address":"27 and 29 Pier",
+              "timezone":"America/Los_Angeles",
+              "id":42153
+              },
+              {
+              "city":"San Francisco",
+              "name":"Bill Graham Civic Auditorium",
+              "extended_address":"San Francisco, CA 94102",
+              "url":"http://seatgeek.com/venues/bill-graham-civic-auditorium/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"bill-graham-civic-auditorium",
+              "state":"CA",
+              "score":0.74237,
+              "postal_code":"94102",
+              "location":{
+              "lat":37.7785,
+              "lon":-122.418
+              },
+              "address":"99 Grove Street",
+              "timezone":"America/Los_Angeles",
+              "id":1325
+              },
+              {
+              "city":"San Francisco",
+              "name":"Nob Hill Masonic Center",
+              "extended_address":"San Francisco, CA 94108",
+              "url":"http://seatgeek.com/venues/nob-hill-masonic-center/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"nob-hill-masonic-center",
+              "state":"CA",
+              "score":0.68527,
+              "postal_code":"94108",
+              "location":{
+              "lat":37.7912,
+              "lon":-122.413
+              },
+              "address":"1111 California St",
+              "timezone":"America/Los_Angeles",
+              "id":1369
+              },
+              {
+              "city":"San Francisco",
+              "name":"The Warfield",
+              "extended_address":"San Francisco, CA 94102",
+              "url":"http://seatgeek.com/venues/the-warfield/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"the-warfield",
+              "state":"CA",
+              "score":0.63513,
+              "postal_code":"94102",
+              "location":{
+              "lat":37.7825,
+              "lon":-122.41
+              },
+              "address":"982 Market Street",
+              "timezone":"America/Los_Angeles",
+              "id":524
+              },
+              {
+              "city":"San Francisco",
+              "name":"Fort Mason",
+              "extended_address":"San Francisco, CA 94123",
+              "url":"http://seatgeek.com/venues/fort-mason/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"fort-mason",
+              "state":"CA",
+              "score":0.61795,
+              "postal_code":"94123",
+              "location":{
+              "lat":37.8054,
+              "lon":-122.427
+              },
+              "address":"1400 Bay Street",
+              "timezone":"America/Los_Angeles",
+              "id":5207
+              },
+              {
+              "city":"San Francisco",
+              "name":"Orpheum Theatre",
+              "extended_address":"San Francisco, CA 94102",
+              "url":"http://seatgeek.com/venues/orpheum-theatre/tickets/",
+              "country":"US",
+              "display_location":"San Francisco, CA",
+              "links":[
+              
+              ],
+              "slug":"orpheum-theatre",
+              "state":"CA",
+              "score":0.61387,
+              "postal_code":"94102",
+              "location":{
+              "lat":37.7793,
+              "lon":-122.414
+              },
+              "address":"1192 Market Street",
+              "timezone":"America/Los_Angeles",
+              "id":2934
+              }
+              ]
+}
